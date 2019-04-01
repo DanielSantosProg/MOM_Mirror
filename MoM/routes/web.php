@@ -11,16 +11,12 @@
 |
 */
 
-Route::get('/', function () {
+Route::get('/pagina_inicial', function () {
     return view('pagina_inicial');
 });
 
-Route::get('/home', function () {
-    return view('home');
-});
-
-Route::get('/login', function () {
-    return view('login');
+Route::get('/homee', function () {
+    return view('homee');
 });
 
 Route::get('/cadastro', function () {
@@ -40,6 +36,10 @@ Route::get('/exibir', function(){
 	return view('exibirfuncionarios');
 });
 
+Route::get('login', function(){
+	return view('Auth\LoginController@login');
+});
+
 Route::get('/departamento', function(){
 	return view('departamento');
 });
@@ -47,15 +47,19 @@ Route::get('/departamento', function(){
 Route::get('/departamento', function(){
 	return view('departamento');
 });
+
+Route::get('logout', 'Auth\LoginController@logout');
+Route::get('login', 'Auth\LoginController@showLoginForm');
 
 Route::resource('departamentos', 'DepartamentoController');
 Route::resource('funcionarios', 'FuncionarioController');
 Route::resource('salas', 'SalaController');
 
 
+Auth::routes();
 
+Route::get('/home', 'HomeController@index')->name('home');
 
+Auth::routes();
 
-
-
-
+Route::get('/home', 'HomeController@index')->name('home');

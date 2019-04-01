@@ -13,6 +13,10 @@
                 <div>
                     <input type = "text" class = "form-control" id="dados_cad_1" name="nome" placeholder = "Digite o nome aqui">
                 </div>
+                <h2 id='senha_cad'>Nome de usuário</h2>
+                <div>
+                    <input type = "text" class = "form-control" id="dados_cad_0" name="usuario" placeholder = "Digite a nome de usuário aqui">
+                </div>
                 <h2 id='senha_cad'>Senha</h2>
                 <div>
                     <input type = "text" class = "form-control" id="dados_cad_2" name="senha" placeholder = "Digite a senha aqui">

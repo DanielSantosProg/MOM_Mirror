@@ -1,11 +1,23 @@
 @extends('layout')
 
 @section('content')
-    <div id="imglogo">
-            <img src="/imgs/logo_g.png" class="img2">
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header">Dashboard</div>
+
+                <div class="card-body">
+                    @if (session('status'))
+                        <div class="alert alert-success" role="alert">
+                            {{ session('status') }}
+                        </div>
+                    @endif
+
+                    You are logged in!
+                </div>
+            </div>
+        </div>
     </div>
-    <a class="btn btn-outline-primary" href="{{route('salas.create')}}" id="home_but_1">Cadastrar <br> sala</a>
-    <a class="btn btn-outline-primary" href="#" id="home_but_2">Alocar <br> funcionário</a>
-    <a class="btn btn-outline-primary" href="{{route('departamentos.create')}}" id="home_but_3">Cadastrar <br> departamento</a>
-    <a class="btn btn-outline-primary" href="/exibir" id="home_but_4">Exibir <br> funcionários</a>
+</div>
 @endsection

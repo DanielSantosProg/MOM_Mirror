@@ -1,0 +1,7 @@
+# pack-refs with: peeled fully-peeled sorted 
+a1c7455d81c88824b8ee48f83555cec5338b0470 refs/heads/Felipe_Witcher
+27a449cb94d4bc71395c09cfaaea668fd56f672a refs/heads/daniel_view
+6226ab9b967766f579047f2d2a99c1a651341257 refs/heads/master
+fb9a4b469b190732e4a871e327cd79a872c23848 refs/pull/1/head
+ad97f0ca2a2c81c11f44861059174343286c5252 refs/pull/2/head
+27a449cb94d4bc71395c09cfaaea668fd56f672a refs/pull/3/head

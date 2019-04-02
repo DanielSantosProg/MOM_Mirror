@@ -13,8 +13,8 @@
         <img src="/imgs/logo_g.png" class="img1">
     </div>   
     <div>
-        <button type="button" class="btn btn-outline-primary" id="login_but">Login</button>
-        <button type="button" class="btn btn-outline-primary" id="reg_but">Registrar funcionário</button>
+        <a type="button" href="/login" class="btn btn-outline-primary" id="login_but">Login</a>
+        <a type="button" href="{{route('funcionarios.create')}}" class="btn btn-outline-primary" id="reg_but">Registrar funcionário</a>
     </div>
       <div>
         <div id="carouselExampleIndicators" class="carousel slide mycarousel" data-ride="carousel">

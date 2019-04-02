@@ -20,7 +20,7 @@
           </div>
         </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Alocar Funcionário</a>
+        <a class="nav-link" href="/alocarfuncionario">Alocar Funcionário</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="/exibir">Exibir Funcionários</a>

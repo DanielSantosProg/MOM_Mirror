@@ -18,7 +18,7 @@ class CreateFuncionariosTable extends Migration
             $table->string('nome');
             $table->string('sexo');
             $table->string('endereço');
-            $table->string('foto');
+            $table->string('foto')->nullable();
             $table->string('rub');
             $table->string('posição');
             $table->bigInteger('id_departamento')->unsigned()->nullable();

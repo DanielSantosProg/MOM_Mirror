@@ -80,7 +80,7 @@ class FuncionarioController extends Controller
      * @param  \App\funcionario  $funcionario
      * @return \Illuminate\Http\Response
      */
-    public function update(Funcionario $funcionario)
+    public function update(Request $request, Funcionario $funcionario)
     {
         $funcionario->nome = $request->input("nome");
         $funcionario->sexo = $request->input("sexo");

@@ -21,13 +21,14 @@
                 <td>{{ $func->nome }}</td>
                 <td>{{ $func->sexo }}</td>
                 <td>{{ $func->endereço }}</td>
-                <td>{{ $func->foto }}</td>
+                <td><img id="foto_func" src="../storage/{{ $func->foto }}" ></td>
                 <td>{{ $func->rub }}</td>
                 <td>{{ $func->posição }}</td>
-                <td>{{ $func->id_departamento }}</td>
-                <td>
+                <td>{{ $func->departamento["nome"]}}</td>
+                <td>                  
                   <form action = "{{ route('funcionarios.destroy', $func->id) }}" method = "POST">
-                    @csrf
+                    @csrf       
+                    <a href ="{{ route('funcionarios.edit', $func->id) }}" class="btn btn-success">Editar</a>       
                     @method('DELETE')
                     <button type = "submit" class="btn btn-danger">Excluir</button>
                   </form>

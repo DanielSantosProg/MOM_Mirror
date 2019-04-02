@@ -15,7 +15,7 @@
                 </div>
                 <h2 id='senha_cad'>Senha</h2>
                 <div>
-                    <input type = "text" class = "form-control" id="dados_cad_2" name="senha" placeholder = "Digite a senha aqui">
+                    <input type = "password" class = "form-control" id="dados_cad_2" name="senha" placeholder = "Digite a senha aqui">
                 </div>
                 <h2 id='end_cad'>Endereço</h2>
                 <div>
